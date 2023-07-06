@@ -1,0 +1,76 @@
+---
+title: 'Rediscovering Javascript - Vanilla JS'
+date: '2023-07-04'
+lastmod: '2023-07-06'
+tags: ["frontend", "javascript"]
+draft: false
+summary: "Frameworks are awesome, but sometime JS is more than enough. "
+authors: ['default']
+---
+![](/static/images/white_wall.jpg)
+
+## Intro
+Recently, I had the opportunity to use Vanilla JS in a project involving the development of a Chrome extension.
+
+Surprisingly, my experience was not as negative as I had initially anticipated. I want to share my experiences regarding the pros and cons about using Vanilla JS, as well as discuss my thoughts on frameworks.
+
+## What is Vanilla JS?
+Vanilla JS actually just means plain Javascript without the use of additional libraries or frameworks. 
+
+The term is a joke that got popular in 2012 because of the website: [vanilla-js.com](http://vanilla-js.com/), it was at the time when JQuery is so popular and people have gone too far and use it for everything.
+
+Nowadays we have tons of JS frameworks like React, Vue, Angular, Next.js...etc. This term serves as a reminder to developers about the inherent capabilities of JavaScript itself.
+
+## Why did I decide to use it in this project?
+
+Here are the two key reasons why I decided to use plain javascript in this project:
+
+### The project scope
+Since the project does not heavily rely on frontend components, and the data flow and UI interactions are relatively straightforward, the efficiency gains provided by frameworks are not that significant.
+
+
+### The nature of extenion development
+Chrome provides built in production ready packaging tools and environment for chrome extensions, so I don't need addtional build tools to handle this, which resolves another issues of using plain JS.
+
+## My experience
+
+During the development process, there are definitely times where I miss the convenience of having a framework. However, overall, I don't have any regrets about my decision.
+
+Here are a few things I want to talk about:
+
+### Structure
+One advantage of working in a code environment without any imposed structure is the freedom to architect everything according to my preferences.
+
+Something I learned a lot throughout the experience is the importance of making abstractions and separating different levels of abstraction to ensure readable and maintainable code.
+
+For example, I adopted the practice of encapsulating DOM manipulation within functions, avoiding direct DOM access in other functions:
+```javascript
+const hide_UI_element = (element_name) =>{
+    generation_elements[element_name].style.display = 'none'
+}
+```
+This conectp is something I read in the book called "*Clean Code*" by *Robert Martin*, but I never really have to implement it myself since frameworks typically handle such tasks for me.
+
+### Maintaince
+This is probabily the best part, wihtout the need to manage all the dependencies makes life so much easier. Furthermore, the absence of third-party libraries makes it less likely to encountering unexpected issues.
+
+### Limitation
+There are definitely limitations when it comes to Vanilla JS project: 
+1. Crafting complex features manually can lead to lengthier and harder-to-read code. 
+2. If more advanced features or external services are needed, it can be challenging to integrate
+
+## Reflection
+
+### Frameworks vs Vanilla JS?
+Whenever any library or framework becomes extremely popular, there will inevitably be voices opposing frameworks or libraries. Vanilla JS can be seen as a response under the context.
+
+Frameworks are great tools, definitely worth to learn and use, it simplifies a lot of complex implementation, so developer can focus on the ideas.
+
+However, sometimes when you are too used to these high abstractions, you become accustomed to following the framework's conventions, which could prevent you from exploring different approaches or thinking creatively.
+
+Moreover, frameworks evolve rapidly, you don't know when the framework you are familar with would become become outdated. Libraries might becomes unsupported over time. 
+
+On the other hand, javascript likely will not die anytime soon. If you have mastered JS, it becomes easier to adapt to new frameworks, since they are built upon its foundation. 
+
+### Conclusion
+Consider vanilla JS as an option when creating small projects. It is a good way to review the fundamentals of JavaScript and gain a better understanding of software architecture.

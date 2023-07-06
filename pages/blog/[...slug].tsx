@@ -6,7 +6,7 @@ import { InferGetStaticPropsType } from 'next'
 import { allBlogs, allAuthors } from 'contentlayer/generated'
 import type { Blog } from 'contentlayer/generated'
 
-const DEFAULT_LAYOUT = 'PostLayout'
+const DEFAULT_LAYOUT = 'PostSimple'
 
 export async function getStaticPaths() {
   return {
@@ -51,7 +51,7 @@ export default function BlogPostPage({
       {'draft' in post && post.draft === true ? (
         <div className="mt-24 text-center">
           <PageTitle>
-            Under Construction{' '}
+            Not done{' '}
             <span role="img" aria-label="roadwork sign">
               🚧
             </span>
