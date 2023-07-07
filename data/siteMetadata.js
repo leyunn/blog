@@ -2,9 +2,9 @@
 
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Software Rookie',
+  title: 'Softie Engineer',
   author: 'Leyun Fu',
-  headerTitle: 'Software Rookie',
+  headerTitle: 'Softie Engineer',
   description: '',
   language: 'en-us',
   theme: 'light', // system, dark or light
@@ -26,7 +26,7 @@ const siteMetadata = {
     simpleAnalytics: false, // true or false
     umamiWebsiteId: '', // e.g. 123e4567-e89b-12d3-a456-426614174000
     posthogProjectApiKey: '', // e.g. AhnJK8392ndPOav87as450xd
-    googleAnalyticsId: '', // e.g. UA-000000-2 or G-XXXXXXX
+    googleAnalyticsId: 'G-GMG4TYBQVE', // e.g. UA-000000-2 or G-XXXXXXX
   },
   // newsletter: {
   //   // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
