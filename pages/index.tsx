@@ -23,14 +23,12 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-12 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-4xl md:leading-14">
-            Welcome to Softie Engineer.
+            {siteMetadata.welcomeTitle}
           </h1>
           <div className="text-lg leading-7 text-gray-500 dark:text-gray-400 sm:text-lg md:text-xl md:leading-8">
-            <h3 className="leading-10" >What is the blog about?</h3>
-            <li>The topics would be mainly about <b>software frameworks, architectures or development methodologies.</b> </li> 
-            <li>It would most likely be in the form of discussions or experience sharing, rather than tutorials.</li>
+            {siteMetadata.welcomeDescription}
           </div>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">

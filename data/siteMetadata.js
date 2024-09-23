@@ -2,10 +2,13 @@
 
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Softie Engineer',
+  title: "Leyun's Blog",
   author: 'Leyun Fu',
-  headerTitle: 'Softie Engineer',
+  headerTitle: "Leyun's Blog",
   description: '',
+  welcomeTitle: 'Hi, this is Leyun. ',
+  welcomeDescription:
+    'I am a junior software engineer who is currently working at Yahoo Taiwan, I would be documenting my software development journey here. I hope you find something useful here.',
   language: 'en-us',
   theme: 'light', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
@@ -16,7 +19,7 @@ const siteMetadata = {
   email: 'leyunswiss@gmail.com',
   github: 'https://github.com/leyunn',
   youtube: 'https://www.youtube.com/channel/UC6xBgqumITwpfyHv8dUaLSQ',
-  linkedin: 'https://www.linkedin.com',
+  linkedin: 'https://www.linkedin.com/in/leyun-fu-153483190',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
