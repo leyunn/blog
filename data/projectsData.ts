@@ -4,7 +4,7 @@ const projectsData = [
     description: `NTU COOL Subtitle Generator (Beta) is a Chrome extension that serves as a beta version for the NTU COOL speech recognition subtitle feature.
     By installing this extension on your Chrome browser, you can experience the subtitle feature on the NTU COOL website.`,
     imgSrc: '/static/images/project_extension.png',
-    href: 'https://chromewebstore.google.com/detail/ntu-cool-%E5%AD%97%E5%B9%95%E7%94%A2%E7%94%9F%E5%99%A8/docghmaodkaieihebenpieblmcfcoppo?hl=zh-TW',
+    href: 'https://hackmd.io/@leyunn/Hkcl4xeYn',
   },
   {
     title: 'Wordle Clone (2022)',
